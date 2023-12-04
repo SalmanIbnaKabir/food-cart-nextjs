@@ -5,7 +5,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Footer from "../components/layout/Footer";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../app/api/auth/[...nextauth]/route";
+import { authOptions } from "./api/auth/[...nextauth]/route";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
 

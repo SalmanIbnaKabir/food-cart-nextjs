@@ -7,10 +7,10 @@ export default function Contact() {
       <SectionHeaders subHeader={"Don't hesitate"} mainHeader={"Contact us"} />
 
       <div className=" flex items-top justify-center   sm:items-center sm:pt-0">
-        <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
+        <div className="container mx-auto sm:px-6 lg:px-8">
           <div className="mt-8 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="p-6 mr-2   sm:rounded-lg">
+              <div className="p-6 mr-2 flex flex-col gap-2   sm:rounded-lg">
                 <h1 className="text-4xl sm:text-5xl text-gray-800  font-extrabold tracking-tight">
                   Get in touch
                 </h1>
@@ -91,7 +91,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <form className="p-6 flex flex-col justify-center">
+              <form className="p-6 flex flex-col gap-2 justify-center">
                 <div className="flex flex-col">
                   <label htmlFor="name">Full Name</label>
                   <input
@@ -109,7 +109,8 @@ export default function Contact() {
                     type="email"
                     id="email"
                     placeholder="Email"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg   border border-gray-400 text-gray-800 font-semibold focus:border-primary focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg   border border-gray-400 text-gray-800 font-semibold focus:border-primary focus:outline-none
+                    "
                   />
                 </div>
 
@@ -119,7 +120,8 @@ export default function Contact() {
                     type="tel"
                     id="tel"
                     placeholder="Telephone Number"
-                    className="ww-100 mt-2 py-3 px-3 rounded-lg   border border-gray-400 text-gray-800 font-semibold focus:border-primary focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg   border border-gray-400 text-gray-800 font-semibold focus:border-primary focus:outline-none
+                    "
                   />
                 </div>
 

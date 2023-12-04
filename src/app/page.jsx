@@ -15,7 +15,7 @@ export default function Home() {
         <SectionHeaders subHeader={"Our story"} mainHeader={"Why Choose Us"} />
         <section className="flex items-center flex-col lg:flex-row my-10">
           <div className="w-full lg:w-1/2">
-            <img src="/about-img.png" className="w-full h-auto" />
+            <img src="/about-img.png" className="w-full h-auto" alt="Hero" />
           </div>
           <div className="w-full lg:w-1/2 lg:ml-8">
             <h1 className="text-3xl lg:text-5xl font-bold my-3 lg:my-5">

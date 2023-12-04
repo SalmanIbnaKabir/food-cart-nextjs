@@ -43,19 +43,19 @@ export const authOptions = {
     }),
   ],
 
-  // callbacks: {
-  //   async jwt({ token, user }) {
-  //     if (user) {
-  //       token.accessToken = user.jwt;
-  //     }
+  callbacks: {
+    async jwt({ token, user }) {
+      if (user) {
+        token.accessToken = user.jwt;
+      }
 
-  //     return token;
-  //   },
-  //   async session({ session, token, user }) {
-  //     session.accessToken = token.accessToken;
-  //     return session;
-  //   },
-  // },
+      return token;
+    },
+    async session({ session, token, user }) {
+      session.accessToken = token.accessToken;
+      return session;
+    },
+  },
   session: {
     strategy: "jwt",
     maxAge: 4 * 60 * 60, // 4 hours

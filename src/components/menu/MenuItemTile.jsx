@@ -8,13 +8,13 @@ export default function MenuItemTile({ onAddToCart, ...item }) {
     sizes?.length > 0 || extraIngredientPrices?.length > 0;
   return (
     <div
-      className="bg-gray-200 p-4 rounded-lg text-center
+      className="bg-gray-200 flex flex-col justify-between flex-nowrap p-4 rounded-lg text-center
       group hover:bg-white hover:shadow-md hover:shadow-black/25 transition-all"
     >
       <div className="text-center">
         <Image
           src={image}
-          className=" max-h-56 max-w-36 block rounded mx-auto w-auto h-auto"
+          className=" max-h-80 max-w-36 block rounded mx-auto w-auto h-auto"
           alt="food"
           width={320}
           height={420}
