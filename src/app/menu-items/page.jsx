@@ -27,7 +27,7 @@ export default function MenuItemsPage() {
   }
 
   return (
-    <section className="mt-8 max-w-2xl mx-auto">
+    <section className="mt-8 max-w-2xl mx-auto mb-6">
       <UserTabs isAdmin={true} />
       <div className="mt-8">
         <Link className="button flex" href={"/menu-items/new"}>
@@ -52,9 +52,11 @@ export default function MenuItemsPage() {
                     alt={""}
                     width={200}
                     height={200}
+                    placeholder="blur"
+                    blurDataURL="/loading.jpg"
                   />
                 </div>
-                <div className="text-center">{item.name}</div>
+                <div className="text-center py-2">{item.name}</div>
               </Link>
             ))}
         </div>

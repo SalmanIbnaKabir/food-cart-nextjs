@@ -37,6 +37,8 @@ export default function Hero() {
           layout={"fill"}
           objectFit={"contain"}
           alt={"pizza"}
+          placeholder="blur"
+          blurDataURL="/loading.jpg"
         />
       </div>
     </section>

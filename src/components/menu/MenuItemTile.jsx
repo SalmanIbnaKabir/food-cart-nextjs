@@ -18,6 +18,8 @@ export default function MenuItemTile({ onAddToCart, ...item }) {
           alt="food"
           width={320}
           height={420}
+          placeholder="blur"
+          blurDataURL="/loading.jpg"
         />
       </div>
       <h4 className="font-semibold text-xl my-3">{name}</h4>

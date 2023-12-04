@@ -8,6 +8,8 @@ const NotFoundPage = () => {
         alt="Not Found Image"
         layout="fill"
         objectFit="contain"
+        placeholder="blur"
+        blurDataURL="/loading.jpg"
       />
     </div>
   );

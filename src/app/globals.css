@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+}
+
 section.hero {
     @apply block md:grid;
     grid-template-columns: .4fr .6fr;

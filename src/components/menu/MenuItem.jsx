@@ -67,6 +67,8 @@ export default function MenuItem(menuItem) {
                 width={400}
                 height={300}
                 className="mx-auto"
+                placeholder="blur"
+                blurDataURL="/loading.jpg"
               />
               <h2 className="text-lg font-bold text-center mb-2">{name}</h2>
               <p className="text-center text-gray-500 text-sm mb-2">
