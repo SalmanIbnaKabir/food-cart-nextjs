@@ -5,6 +5,8 @@ import { useProfile } from "@/components/UseProfile";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Loading from "../loading";
+import toast from "react-hot-toast";
 
 export default function MenuItemsPage() {
   const [menuItems, setMenuItems] = useState([]);
@@ -19,11 +21,11 @@ export default function MenuItemsPage() {
   }, []);
 
   if (loading) {
-    return "Loading user info...";
+    return <Loading />;
   }
 
   if (!data.admin) {
-    return "Not an admin.";
+    return toast.error("Not an admin");
   }
 
   return (

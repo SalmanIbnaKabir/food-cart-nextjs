@@ -5,6 +5,7 @@ import { useProfile } from "@/components/UseProfile";
 import { dbTimeForHuman } from "@/libs/datetime";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Loading from "../loading";
 
 export default function OrdersPage() {
   const [orders, setOrders] = useState([]);
@@ -29,7 +30,11 @@ export default function OrdersPage() {
     <section className="mt-8 max-w-2xl mx-auto">
       <UserTabs isAdmin={profile.admin} />
       <div className="mt-8">
-        {loadingOrders && <div>Loading orders...</div>}
+        {loadingOrders && (
+          <div>
+            <Loading />
+          </div>
+        )}
         {orders?.length == 0 && (
           <p className="mt-4 text-center">No Orders Found 😔</p>
         )}

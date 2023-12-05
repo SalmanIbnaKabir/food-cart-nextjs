@@ -3,6 +3,8 @@ import UserTabs from "@/components/layout/UserTabs";
 import { useProfile } from "@/components/UseProfile";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Loading from "../loading";
+import toast from "react-hot-toast";
 
 export default function UsersPage() {
   const [users, setUsers] = useState([]);
@@ -17,11 +19,11 @@ export default function UsersPage() {
   }, []);
 
   if (loading) {
-    return "Loading user info...";
+    return <Loading />;
   }
 
   if (!data.admin) {
-    return "Not an admin";
+    return toast.error("Not an admin");
   }
 
   return (
