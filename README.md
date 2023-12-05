@@ -1,4 +1,4 @@
-# [Food Cart Project ] (https://food-cart-sik.vercel.app)
+# Food Cart Project [LIVE](https://food-cart-sik.vercel.app)
 
 ## Table of Contents
 - [Introduction](#introduction)
