@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Food Cart Project [LIVE](https://food-cart-sik.vercel.app)
 
-## Getting Started
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+  - [User](#user)
+    - [Authentication](#authentication)
+    - [Profile Management](#profile-management)
+    - [Ordering](#ordering)
+    - [Payment](#payment)
+  - [Admin](#admin)
+    - [Menu Management](#menu-management)
+    - [Order and User Management](#order-and-user-management)
 
-First, run the development server:
+## Introduction
+This is a web-based food cart application where users can order food, and manage their profiles, and admins can manage the menu, orders, and users.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### User
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+#### Authentication
+- Users can log in using Google or with their email and password.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Profile Management
+- Users can update their profiles, including adding a custom image.
 
-## Learn More
+#### Ordering
+- Users can add items to their cart.
+- Users can view and manage their orders.
+- Users can proceed to checkout.
 
-To learn more about Next.js, take a look at the following resources:
+#### Payment
+- Payment is processed using Stripe.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Admin
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Menu Management
+- Admins can add new menus.
+- Admins can add menu items.
 
-## Deploy on Vercel
+#### Order and User Management
+- Admins can view and manage orders.
+- Admins can view and manage users.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
+- Full-Stack: [Next.js, Tailwindcss]
+- Database: [Mogodb mongoose]
+- Payment: [Stripe]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+- Launch the application.
+- Users can log in, order food, and manage their profiles.
+- Admins can manage menus, orders, and users.
+
