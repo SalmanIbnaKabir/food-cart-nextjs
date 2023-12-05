@@ -44,16 +44,9 @@ This is a web-based food cart application where users can order food, and manage
 - Admins can view and manage users.
 
 ## Technologies Used
--Full-Stack: [Next.js, Tailwindcss]
+- Full-Stack: [Next.js, Tailwindcss]
 - Database: [Mogodb mongoose]
 - Payment: [Stripe]
-
-## Setup
-1. Clone the repository.
-2. Set up the front end.
-3. Set up the backend.
-4. Configure the database.
-5. Configure Stripe for payment processing.
 
 ## Usage
 - Launch the application.
