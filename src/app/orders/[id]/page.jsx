@@ -27,7 +27,7 @@ export default function OrderPage() {
         });
       });
     }
-  }, [id]);
+  }, [id, clearCart]);
 
   // is not working id Removed
 

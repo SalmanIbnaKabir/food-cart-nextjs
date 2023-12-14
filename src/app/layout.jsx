@@ -4,8 +4,8 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Footer from "../components/layout/Footer";
-import { getServerSession } from "next-auth";
-import { authOptions } from "./api/auth/[...nextauth]/route";
+// import { getServerSession } from "next-auth";
+// import { authOptions } from "./api/auth/[...nextauth]/route";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
@@ -15,20 +15,20 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const session = getServerSession(authOptions);
+  // const session = getServerSession(authOptions);
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={roboto.className}>
-        <main className="container mx-auto pt-4">
-          <AppProvider session={session}>
+      <AppProvider>
+        <body className={roboto.className}>
+          <main className="container mx-auto pt-4">
             <Toaster />
             <Header />
             <div className="min-h-screen">{children}</div>
 
             <Footer />
-          </AppProvider>
-        </main>
-      </body>
+          </main>
+        </body>
+      </AppProvider>
     </html>
   );
 }
