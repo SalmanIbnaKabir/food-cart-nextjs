@@ -12,7 +12,7 @@ export async function GET(req) {
 
   const url = new URL(req.url);
   const _id = url.searchParams.get("_id");
-  if (_id) {
+  if (_id && mongoose.Types.ObjectId.isValid(_id)) {
     return Response.json(await Order.findById(_id));
   }
 
