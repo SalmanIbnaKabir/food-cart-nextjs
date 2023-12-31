@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section className="my-9 ">
+      <section className="my-10 ">
         <SectionHeaders subHeader={""} mainHeader={"Our Best Menu"} />
         <Category />
       </section>
 
       <HomeMenu />
 
-      <section className="my-9 ">
+      <section className="my-10 ">
         <SectionHeaders
           subHeader={"Weekend Wonders Sale"}
           mainHeader={"Discount Offer"}

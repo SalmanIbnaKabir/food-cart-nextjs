@@ -2,7 +2,7 @@ import React from "react";
 
 const Promotion = () => {
   return (
-    <section id="promo" className="my-9">
+    <section id="promo" className="my-10">
       <div className="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
         {/* <!-- card 1 --> */}
         <div className=" flex flex-col p-5 bg-gray-100 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
