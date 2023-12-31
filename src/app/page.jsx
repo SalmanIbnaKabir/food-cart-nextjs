@@ -5,12 +5,28 @@ import SectionHeaders from "@/components/layout/SectionHeaders";
 import { TbTruckDelivery, TbCurrencyDollar } from "react-icons/tb";
 import { RiCustomerService2Line } from "react-icons/ri";
 import Contact from "@/components/layout/Contact";
+import Category from "@/components/layout/Category";
+import Promotion from "@/components/layout/Promotion";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <section className="my-9 ">
+        <SectionHeaders subHeader={""} mainHeader={"Our Best Menu"} />
+        <Category />
+      </section>
+
       <HomeMenu />
+
+      <section className="my-9 ">
+        <SectionHeaders
+          subHeader={"Weekend Wonders Sale"}
+          mainHeader={"Discount Offer"}
+        />
+        <Promotion />
+      </section>
+
       <section className="text-center my-16" id="about">
         <SectionHeaders subHeader={"Our story"} mainHeader={"Why Choose Us"} />
         <section className="flex items-center flex-col lg:flex-row my-10">

@@ -3,6 +3,7 @@ import SectionHeaders from "@/components/layout/SectionHeaders";
 import MenuItem from "@/components/menu/MenuItem";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function HomeMenu() {
   const [bestSellers, setBestSellers] = useState([]);
@@ -46,6 +47,14 @@ export default function HomeMenu() {
       <div className="grid md:grid-cols-3 sm:grid-cols-2 justify-center gap-6   p-6">
         {bestSellers?.length > 0 &&
           bestSellers.map((item) => <MenuItem key={item._id} {...item} />)}
+      </div>
+      <div className="flex justify-center items-center">
+        <Link
+          href="/menu"
+          className=" bg-primary font-bold  text-white px-5 py-2 rounded-full"
+        >
+          All Menu
+        </Link>
       </div>
     </section>
   );
