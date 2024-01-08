@@ -42,6 +42,10 @@ export default function LoginPage() {
           Login
         </button>
         <div className="my-4 text-center text-gray-500">
+          Admin credentials: <br />
+          email: admin@gmail.com <br />
+          password: 123456 <br />
+          <br />
           or login with provider
         </div>
         <button

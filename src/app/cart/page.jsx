@@ -7,12 +7,19 @@ import CartProduct from "@/components/menu/CartProduct";
 import { useProfile } from "@/components/UseProfile";
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
+import Link from "next/link";
 import toast from "react-hot-toast";
 
 export default function CartPage() {
   const { cartProducts, removeCartProduct } = useContext(CartContext);
   const [address, setAddress] = useState({});
   const { data: profileData } = useProfile();
+  // console.log("profile ", profileData);
+  // if (!profileData.city) {
+  //   console.log("prifile data nai");
+  // } else {
+  //   console.log("in condition", profileData);
+  // }
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -86,7 +93,7 @@ export default function CartPage() {
       <div className="text-center">
         <SectionHeaders mainHeader="Cart" />
       </div>
-      <div className="mt-8 grid gap-8 grid-cols-2">
+      <div className="mt-8 grid gap-8 grid-cols-1 md:grid-cols-2">
         <div>
           {cartProducts?.length === 0 && (
             <div>No products in your shopping cart</div>
@@ -123,7 +130,16 @@ export default function CartPage() {
               addressProps={address}
               setAddressProp={handleAddressChange}
             />
-            <button type="submit">Pay ${subtotal + 5}</button>
+            {profileData.email ? (
+              <button type="submit">Pay ${subtotal + 5}</button>
+            ) : (
+              <Link
+                href="/login"
+                className="button bg-primary border-primary !text-white"
+              >
+                Please Login for checkout
+              </Link>
+            )}
           </form>
         </div>
       </div>
